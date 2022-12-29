@@ -1,5 +1,82 @@
 @import url(./css/utilities.css);
 
 body {
+  margin: 0rem;
   font-family: "Overpass";
+  background-color: var(--cor-06);
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: 24rem;
+  background-color: var(--cor-05);
+  display: grid;
+  padding: 2rem;
+  margin-block: 4rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  gap: 1.25rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  background-color: hsl(213, 19%, 16%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon img {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+h1 {
+  margin: 0rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.numbers {
+  display: flex;
+  gap: 1.25rem;
+}
+.numbers span {
+  background: var(--cor-06);
+  height: 1.9rem;
+  width: 1.9rem;
+  line-height: 1.9rem;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.numbers span:hover {
+  background: var(--cor-03);
+  color: var(--cor-02);
+}
+
+button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--cor-01);
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--cor-02);
+  color: red;
 }
