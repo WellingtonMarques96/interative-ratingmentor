@@ -1,12 +1,24 @@
-const escolher = document.querySelectorAll(".numbers span");
+const submit = document.querySelector(".botao");
 
-function changeColor(event) {
-  link.style.backgroundColor = "hsl(25, 97%, 53%)";
+function mostrar() {
+  const thanks = document.querySelector(".thank-you");
+  thanks.classList.toggle("ativar");
+  const rating = document.querySelector("main");
+  rating.classList.toggle("esconder");
 }
 
-function numberClick(numero) {
+submit.addEventListener("click", mostrar);
+
+const numbers = document.querySelectorAll("#rating li");
+
+function changeColor(event) {
+  const numero = event.currentTarget;
+
+  console.log(numero);
+}
+
+function escolher(numero) {
   numero.addEventListener("click", changeColor);
 }
 
-escolher.forEach(numberClick);
-console.log(escolher);
+numbers.forEach(escolher);

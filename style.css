@@ -11,6 +11,12 @@ body {
 img {
   max-width: 100%;
 }
+ul,
+li {
+  margin: 0rem;
+  padding: 0rem;
+  list-style: none;
+}
 
 .container {
   box-sizing: border-box;
@@ -52,11 +58,11 @@ p {
   font-size: 1rem;
   font-weight: 400;
 }
-.numbers {
+#rating {
   display: flex;
   gap: 1.2rem;
 }
-.numbers span {
+#rating li {
   background: var(--cor-06);
   height: 1.9rem;
   width: 1.9rem;
@@ -67,8 +73,12 @@ p {
   cursor: pointer;
 }
 
-.numbers span:hover {
-  background: var(--cor-03);
+#rating li:checked {
+  background-color: var(--cor-03);
+}
+
+#rating li:hover {
+  background: var(--cor-01);
   color: var(--cor-02);
 }
 
@@ -98,4 +108,22 @@ article p {
   display: grid;
   text-align: center;
   padding-inline: 1rem;
+}
+
+/*---Script---*/
+
+.thank-you {
+  display: none;
+}
+
+.ativar {
+  display: block;
+}
+
+.esconder {
+  display: none;
+}
+
+#selecionado {
+  background-color: var(--cor-03);
 }
