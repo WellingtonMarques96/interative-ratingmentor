@@ -1,3 +1,5 @@
+/*--GLOBAL--*/
+
 @import url(./css/utilities.css);
 
 body {
@@ -10,16 +12,19 @@ img {
   max-width: 100%;
 }
 
-main {
-  max-width: 24rem;
+.container {
+  box-sizing: border-box;
+  max-width: 25rem;
   background-color: var(--cor-05);
   display: grid;
-  padding: 2rem;
+  padding: 1rem;
   margin-block: 4rem;
   margin-inline: auto;
   border-radius: 1rem;
   gap: 1.25rem;
 }
+
+/*--MAIN--*/
 
 .icon {
   width: 1.5rem;
@@ -38,18 +43,18 @@ main {
 
 h1 {
   margin: 0rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 p {
   margin: 0rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .numbers {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.2rem;
 }
 .numbers span {
   background: var(--cor-06);
@@ -79,4 +84,18 @@ button {
 button:hover {
   background: var(--cor-02);
   color: red;
+}
+
+/*--Thank you--*/
+
+article {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+article p {
+  display: grid;
+  text-align: center;
+  padding-inline: 1rem;
 }
