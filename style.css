@@ -8,14 +8,12 @@ body {
   background-color: var(--cor-06);
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
-}
-ul,
-li {
-  margin: 0rem;
-  padding: 0rem;
-  list-style: none;
 }
 
 .container {
@@ -58,12 +56,13 @@ p {
   font-size: 1rem;
   font-weight: 400;
 }
-#rating {
+.numbers {
   display: flex;
   gap: 1.2rem;
 }
-#rating li {
+.item {
   background: var(--cor-06);
+  color: var(--cor-04);
   height: 1.9rem;
   width: 1.9rem;
   line-height: 1.9rem;
@@ -73,16 +72,12 @@ p {
   cursor: pointer;
 }
 
-#rating li:checked {
-  background-color: var(--cor-03);
-}
-
-#rating li:hover {
+.item:hover {
   background: var(--cor-01);
   color: var(--cor-02);
 }
 
-button {
+.botao {
   font-size: 1rem;
   text-transform: uppercase;
   background-color: var(--cor-01);
@@ -91,7 +86,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.botao:hover {
   background: var(--cor-02);
   color: red;
 }

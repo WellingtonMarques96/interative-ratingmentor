@@ -1,4 +1,8 @@
+const links = document.querySelectorAll(".item");
 const submit = document.querySelector(".botao");
+const selected = document.querySelector("#selected");
+const button = document.querySelector("button");
+const message = document.querySelector("#message");
 
 function mostrar() {
   const thanks = document.querySelector(".thank-you");
@@ -8,17 +12,3 @@ function mostrar() {
 }
 
 submit.addEventListener("click", mostrar);
-
-const numbers = document.querySelectorAll("#rating li");
-
-function changeColor(event) {
-  const numero = event.currentTarget;
-
-  console.log(numero);
-}
-
-function escolher(numero) {
-  numero.addEventListener("click", changeColor);
-}
-
-numbers.forEach(escolher);

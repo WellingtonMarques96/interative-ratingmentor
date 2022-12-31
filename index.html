@@ -27,36 +27,35 @@
 </head>
 
 <body>
-  <!-- Rating state start -->
   <main class="container">
     <div class="icon"><img src="./images/icon-star.svg" width="14" alt=""></div>
     <h1 class="cor-02">How did we do?</h1>
     <p class="cor-04"> Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
-    <ul id="rating" class="cor-04">
-      <li class="numbers">1</li>
-      <li class="numbers">2</li>
-      <li class="numbers">3</li>
-      <li class="numbers">4</li>
-      <li class="numbers">5</li>
-    </ul>
+    <div class="numbers">
+      <a href="#" id="1" class="item">1</a>
+      <a href="#" id="2" class="item">2</a>
+      <a href="#" id="3" class="item">3</a>
+      <a href="#" id="4" class="item">4</a>
+      <a href="#" id="5" class="item">5</a>
+    </div>
+    <p id="message">Please rate us before submitting...</p>
     <button class="botao cor-02">submit</button>
-  </main>
-  <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+
+  </main>
+
   <article class="thank-you container">
     <div>
       <img src="./images/illustration-thank-you.svg" alt="imagem de agradecimento">
     </div>
-    <span class="cor-01"> You selected 4 out of 5</span>
+    <a id="selected" class="cor-01"></a>
     <h2 class="cor-02">Thank you!</h2>
     <p class="cor-04">
       We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch!
     </p>
   </article>
-  <!-- Thank you state end -->
 
   <footer>
     <div class="attribution">
