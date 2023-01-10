@@ -22,8 +22,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https:)
-- Live Site URL: [Add live site URL here](https://wellingtonmarques96.github.io/interative-ratingmentor.io/)
+- Solution URL: [Solution](https:)
+- Live Site URL: [Live site at Github](https://wellingtonmarques96.github.io/interative-ratingmentor.io/)
 
 ## My process
 
