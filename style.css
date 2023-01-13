@@ -125,6 +125,10 @@ article p {
   display: none;
 }
 
-#selecionado {
+.selected {
   background-color: var(--cor-03);
+}
+
+#message {
+  display: none;
 }
